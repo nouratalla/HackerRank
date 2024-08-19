@@ -1,0 +1,23 @@
+import numpy
+
+def arrays(arr):
+    arr.reverse()
+    a = numpy.array(arr, float) # Reverse the list in place so if i put it in a variable called reversedList it will return None
+    return a
+
+arr = input().strip().split(' ')
+result = arrays(arr)
+print(result)
+
+Second Solution
+
+
+
+def arrays(arr):
+    reversedList = arr[::-1]  # Create a new list that is the reverse of the original list
+    a = np.array(reversedList, float)  # Convert the reversed list to a NumPy array of floats
+    return a
+
+arr = input().strip().split(' ')
+result = arrays(arr)
+print(result)
